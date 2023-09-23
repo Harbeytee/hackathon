@@ -1,0 +1,173 @@
+@mixin montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin clash_display {
+   font-family: 'Clash Display', sans-serif;
+   font-weight: 700;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include montserrat;
+    .desktop {
+        display: none;
+    }
+     
+    p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+   
+    
+    form {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        button {
+            margin: 0.3rem auto 2.7rem;
+            width: 172px;
+            height: 53px;
+        }
+    }
+    input, textarea {
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 1.4rem;
+        width: 100%;
+        max-width: 437px;
+        padding-left: 1.3rem;
+        &::placeholder {
+            color: #FFF;
+            @include montserrat;
+            font-size: 16px;
+        }
+    }
+    input {
+        height: 47px;
+    }
+    textarea {
+        height: 160px;
+        padding-top: 1.3rem;
+    }
+
+    
+}
+
+.arrow {
+   
+    margin: 2rem auto 2rem 2rem;
+   
+}
+
+.contact-form {
+    p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1.6rem;
+       
+    }
+    h2 {
+        // font-size: 20px;
+         
+         @include clash_display;
+         font-weight: 600;
+         margin: 2rem 2rem 1.6rem 2rem;
+         line-height: 28px;
+         //text-align: center;
+         //width: 195px;
+         
+         
+     }
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.4rem auto; 
+    img {
+        margin-top: 0.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .socials {
+        margin: 0;
+        justify-content: flex-start;
+    }
+    #contact {
+        .desktop {
+            display: flex;
+        }
+        input {
+            height: 40px;
+        }
+        textarea {
+            height: 120px;
+        }
+       input, textarea {
+        margin-top: 0.8rem;
+       }
+        p {
+            text-align: left;
+        }
+    }
+    .contact-flex {
+       width: 100%;
+        margin: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-half {
+        margin-right: 4rem;
+        margin-left: 2rem;
+        h2 {
+            font-size: 34px;
+            margin: 0 ;
+            margin-bottom: 1.8rem;
+            @include clash_display;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        
+        > * {
+            text-align: left;
+        }
+        
+    }
+    .contact-form {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+        margin-left: 4rem;
+        margin-right: 2rem;
+        width: 60vw;
+        max-width: 617px;
+        // width: 500px;
+        height: 560px;
+        padding: 1rem 3rem ;
+        text-align: left;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        .purple {
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 20px;
+            width: 100%;
+        }
+
+    }
+}

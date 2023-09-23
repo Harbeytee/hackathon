@@ -1,6 +1,6 @@
-import './globals.css'
+import './globals.scss'
 import { Inter } from 'next/font/google'
-
+import Head from "next/head"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +11,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <link href="https://api.fontshare.com/v2/css?f[]=montserrat@400,500,700,400,100,300,600&f[]=clash-display@400,700,500,600,300&display=swap" rel="stylesheet"></link>
+      </Head>
+      
+      
+      
+      <body /*className={inter.className}*/>
+        
+
+        {children}
+
+        
+      </body>
+
+     
     </html>
   )
 }
