@@ -45,6 +45,11 @@
             @include montserrat;
             font-size: 16px;
         }
+        &:focus {
+            outline: none;
+            border: 1px solid #D434FE;
+            
+        }
     }
     input {
         height: 47px;
@@ -52,6 +57,10 @@
     textarea {
         height: 160px;
         padding-top: 1.3rem;
+    }
+    h3 {
+        text-align: center;
+        margin: 0 auto;
     }
 
     

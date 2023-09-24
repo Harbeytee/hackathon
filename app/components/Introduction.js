@@ -3,7 +3,7 @@ import Image from "next/image"
 import styles from '../page.module.scss'
 export default function Introduction() {
   return (
-    <div className={styles.introduction}>
+    <div id="intro" className={styles.introduction}>
         <div>
             <Image src='../landingPage/bigIdea.svg' className={styles.big_idea} width={264.004} height={257}/>
         </div>

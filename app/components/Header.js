@@ -12,13 +12,13 @@ export default function Header({className, button}) {
           <h4 className="logo">get<span className="purple">linked</span></h4>
           <div className="desktop-view">
             <ul>
-                <li>Timeline</li>
-                <li>Overview</li>
-                <li>FAQs</li>
+                <li><Link href='/'>Timeline</Link></li>
+                <li><a href='/#intro'>Overview</a></li>
+                <li><a href='/#faq'>FAQs</a></li>
                 <li><Link href='/contact'>Contact</Link></li>
 
             </ul>
-            <button className={button}>Register</button>
+            <Link href='/register' className={button}>Register</Link>
 
           </div>
 

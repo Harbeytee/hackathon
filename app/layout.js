@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link href="https://api.fontshare.com/v2/css?f[]=montserrat@400,500,700,400,100,300,600&f[]=clash-display@400,700,500,600,300&display=swap" rel="stylesheet"></link>
+        <link href="https://api.fontshare.com/v2/css?f[]=montserrat@400,500,700,400,100,101,201,300,600&f[]=clash-display@400,700,500,600,300&display=swap" rel="stylesheet"></link>
       </Head>
       
       

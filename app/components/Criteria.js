@@ -6,13 +6,13 @@ export default function Criteria() {
   return (
     <div className={styles.criteria}>
         <div className={styles.criteria_lens1}>
-          <div className={styles.lens_center}>
+          <div className='lens_center'>
           
           </div>
         </div>
 
         <div className={styles.criteria_lens2}>
-          <div className={`${styles.lens_center} ${styles.criteria_lens2}`}></div>
+          <div className={`lens_center ${styles.criteria_lens2}`}></div>
 
         </div>
         

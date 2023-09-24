@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function FAQ() {
   return (
-    <div className={styles.faq}>
+    <div id='faq' className={styles.faq}>
           {/* <div className={styles.faq_img} src='../landingPage/faq.svg' width={500} height={300}  /> */}
           <div className={styles.faq_img}></div>
           <div style={{maxWidth: '457px'}}>

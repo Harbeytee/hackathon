@@ -8,10 +8,10 @@ export default function Rules() {
         {/* <Image className={styles.rules_gradient1} src='../landingpage/purpleGradient.svg' width={100} height={100}/>
         <Image className={styles.rules_gradient2} src='../landingpage/purpleGradient.svg' width={100} height={100}/> */}
         <div className={styles.rules_gradient}>
-          <div className={styles.lens_center}></div>
+          <div className='lens_center'></div>
         </div>
         <div className={styles.rules_gradient2}>
-          <div className={styles.lens_center}></div>
+          <div className='lens_center'></div>
         </div>
         <div className={styles.rules_img}>
           <Image src='../landingPage/rules.svg' width={500} height={300}  />
