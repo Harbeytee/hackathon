@@ -5,7 +5,23 @@
    font-family: 'Clash Display', sans-serif;
    font-weight: 700;
 }
+
+.purple_lens1,
+.purple_lens2 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.60;
+}
+.purple_lens1 {
+   
+    top: 65px;
+    left: -106px;
+    
+   
+}
+
 #contact {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +121,24 @@
 }
 
 @media only screen and (min-width: 960px) {
+    .purple_lens1 {
+       
+        top: 40px;
+        left: -250px;
+        
+    }
+    .purple_lens2 {
+       
+        bottom: -120px;
+        right: 0px;
+       > div {
+            width: 600px;
+            height: 500px;
+        }
+        
+       
+       // background-color: red;
+    }
     .socials {
         margin: 0;
         justify-content: flex-start;
@@ -128,7 +162,7 @@
     }
     .contact-flex {
        width: 100%;
-        margin: 6rem;
+        margin: 6rem 6rem 0;
         display: flex;
         justify-content: center;
         align-items: center;

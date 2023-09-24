@@ -12,9 +12,17 @@ export default function Criteria() {
         </div>
 
         <div className={styles.criteria_lens2}>
-          <div className={`lens_center ${styles.criteria_lens2}`}></div>
-
+          <div className='lens_center'>
+          
+          </div>
         </div>
+
+        {/* <div className={styles.criteria_lens2}>
+          <div className='lens_center'>
+
+          </div>
+
+        </div> */}
         
         <div>
         <Image src='../landingPage/criteria.svg' width={332} height={275} className={styles.criteria_img} />

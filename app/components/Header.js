@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Head from "next/head"
 import Link from "next/link"
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'], weight: '400'})
+
 export default function Header({className, button}) {
   return (
     <>
@@ -9,6 +12,20 @@ export default function Header({className, button}) {
         <link href="https://api.fontshare.com/v2/css?f[]=montserrat@500,700,701,400,100,300,600&f[]=clash-display@400,700,500,600,300&display=swap" rel="stylesheet"></link>
       {/* </Head> */} 
     <header className={className}>
+          <nav className={inter.className}>
+                <div className="close">
+                 
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <Link href='/'>Timeline</Link>
+                <a href='/#intro'>Overview</a>
+                <a href='/#faq'>FAQs</a>
+                <Link href='/contact'>Contact</Link>
+                <Link href='/register' className={button}>Register</Link>
+          </nav>
+
           <h4 className="logo">get<span className="purple">linked</span></h4>
           <div className="desktop-view">
             <ul>

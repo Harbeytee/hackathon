@@ -14,6 +14,8 @@ $gray: rgba(255, 255, 255, 0.18);
 
 //Start first page
 .page1 {
+    width: 100%;
+    //overflow-x: hidden;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
@@ -31,13 +33,11 @@ $gray: rgba(255, 255, 255, 0.18);
     max-width: 396px;
     height: 442px;
     position: absolute;
-    top: -26px;
+    top: -126px;
+    left: -150px;
     z-index: -1;
+    opacity: 0.65;
    
-    //background: url('/landingPage/purpleGradient.svg'), lightgray -184.527px 3.278px / 146.745% 105.327% no-repeat;
-    //background-color: purple;
-    //background-blend-mode: hard-light;
-    //border-radius: 50%;
 }
 
 .heading {
@@ -137,13 +137,14 @@ $gray: rgba(255, 255, 255, 0.18);
     height: 280px;
    // background-color: red;
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    img {
+    img:nth-of-type(2) {
         position: absolute;
-        width: 100%;
+        //width: 100%;
     }
 }
 .guy {
@@ -163,16 +164,24 @@ $gray: rgba(255, 255, 255, 0.18);
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        margin-top: 2rem;
+        padding: 0 2rem
     }
     .firstpageImg1 {
         display: none;
     }
     .firstpageImg2 {
         display: flex;
-       img {width: 100%;
+        //height: 300px;
+       
+        height: 600px;
+       
+        height: 600px;
+       img {
+        width: 100%;
         height: 100%;
-        max-width: 600px;
-        max-height: 600px;
+        // width: 600px;
+        // height: 600px;
         }
     }
     .centerize {
@@ -180,7 +189,7 @@ $gray: rgba(255, 255, 255, 0.18);
         text-align: left;
        
         h2 {
-            font-size: 65px;
+            font-size: 55px;
             text-align: left;
         }
         p:nth-of-type(1) {
@@ -191,6 +200,9 @@ $gray: rgba(255, 255, 255, 0.18);
             text-align: left;
             margin-bottom: 2rem;
         }
+    }
+    .smallIcons {
+        justify-content: flex-start;
     }
     .heading {
         font-size: 19px;
@@ -211,7 +223,7 @@ $gray: rgba(255, 255, 255, 0.18);
         left: 15px;
     }
     .timer {
-        margin-top: 5rem;
+        margin-top: 3.6rem;
         font-size: 54px;
     }
     .purpleGradient {
@@ -319,7 +331,7 @@ $gray: rgba(255, 255, 255, 0.18);
         font-weight: 700;
         line-height: 133%;
         margin-top: 0.5rem;
-        font-size: 30px;
+        font-size: 24px;
 
     }
     p {
@@ -393,7 +405,7 @@ $gray: rgba(255, 255, 255, 0.18);
         text-align: left;
         justify-content: center;
         align-items: center;
-        
+        padding: 0 2rem;
         h2 {
             font-size: 40px;
         }
@@ -480,7 +492,7 @@ $gray: rgba(255, 255, 255, 0.18);
     align-items: center;
     text-align: center;
     padding-top: 1.8rem;
-    overflow: hidden;
+    //overflow: hidden;
     
    
     .btn {
@@ -527,8 +539,11 @@ $gray: rgba(255, 255, 255, 0.18);
 }
 @mixin lens {
     opacity: 0.65;
-    position: absolute;
+    
     z-index: -1;
+    
+    position: absolute;
+   
     
     
 
@@ -540,13 +555,14 @@ $gray: rgba(255, 255, 255, 0.18);
    
 }
 .criteria_lens2 {
-    bottom: 250px;
-    right: 150px;
+    bottom: 70px;
+   right: -75px;
     @include lens;
     
     
     
 }
+
 
 @media only screen and (min-width: 960px) {
     .criteria {
@@ -636,39 +652,64 @@ $gray: rgba(255, 255, 255, 0.18);
     
 }
 .faq_img {
-    width: 80%;
-    height: 327px;
+    width: 90%;
+    height: 347px;
     background-image: url("/landingPage/faq.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    display: block;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 12px;
+        left: -15px;
+    }
+   
+
 }
 
 @media only screen and (min-width: 760px) {
     .faq {
+        align-items: normal;
         padding-left: 2rem;
         padding-bottom: 2.5rem;
         flex-direction: row-reverse;
+
+       
         
         h2 {
             text-align: left;
-            font-size: 32px;
+            font-size: 34px;
             + p {
                 text-align: left;
                 margin: 0.85rem 0;
-                font-size: 15px;
+                font-size: 17px;
             }
+        }
+        .text {
+            div { font-size: 17px;}
         }
         
     }
     .faq_img {
-        width: 65vw;
-        max-width: 641px;
-        height: 641px;
+        width: 60vw;
+        max-width: 541px;
+        height: 541px;
+        img {
+            height: 589px;
+        }
+        + div {
+            padding-top: 2rem;
+        }
     }
     .accordion {
-        margin: 4rem 0;
+        margin: 3rem 0;
+        font-size: 17px;
     }
 }
 
@@ -760,9 +801,10 @@ $gray: rgba(255, 255, 255, 0.18);
     .timeline {
         padding-bottom: 6rem;
         h2 {
-            font-size: 34px;
+            font-size: 36px;
+            font-weight: 700;
             + p {
-                font-size: 14px;
+                font-size: 16px;
                 width: 346px;
                 margin-bottom: 4rem;
             }
@@ -804,7 +846,30 @@ $gray: rgba(255, 255, 255, 0.18);
 
 
 //Start prizes
+.prize_gradient1, .prize_gradient2 {
+    width: 100%;
+    max-width: 406px;
+    height: 442px;
+    position: absolute;
+   
+    z-index: -1;
+    opacity: 0.65;
+   
+}
+.prize_gradient1 {
+    height: 435px;
+    top: -60px;
+    left: -120px;
+}
+
+.prize_gradient2 {
+    bottom: 70px;
+    right: -110px;
+
+}
+
 .prizes {
+    z-index: 1;
     background-color: rgb(7, 11, 32);
     position: relative;
     padding-top: 3rem;
@@ -896,11 +961,18 @@ $gray: rgba(255, 255, 255, 0.18);
 
 
 @media only screen and (min-width: 960px) {
+    .prize_gradient1 {
+        top: 40px;
+        right: -300px;
+        left: 20px;
+    
+    }
     .prizes {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 6rem;
+        flex-wrap: wrap;
+        padding: 6rem 1rem 0;
         h2 {
             text-align: left;
             font-size: 32px;
@@ -911,6 +983,7 @@ $gray: rgba(255, 255, 255, 0.18);
                 text-align: left;
                 margin:  1rem 0;
                 margin-left: 9rem;
+                width: 380px;
             }
         }
     }
@@ -991,7 +1064,23 @@ $gray: rgba(255, 255, 255, 0.18);
 //End Partners
 
 //Start Privacy
+
+.privacy_gradient {
+    width: 100%;
+    max-width: 406px;
+    height: 442px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.65;
+    //height: 435px;
+    bottom: 40%;
+    left: -190px;
+}
+
+
 .privacy {
+    position: relative;
+    z-index: 1;
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -999,6 +1088,8 @@ $gray: rgba(255, 255, 255, 0.18);
     align-items: center;
     text-align: center;
     @include montserrat;
+
+
     h2 {
         @include clash_display;
         font-size: 24px;
@@ -1080,9 +1171,14 @@ $gray: rgba(255, 255, 255, 0.18);
 }
 
 @media only screen and (min-width: 860px) {
+    .privacy_gradient {
+       
+        bottom: 80px;
+        
+    }
     .privacy {
         padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-bottom: 8rem;
         padding-left: 2rem;
         text-align: left;
         flex-direction: row;
@@ -1106,11 +1202,12 @@ $gray: rgba(255, 255, 255, 0.18);
     }
     .privacy_box {
         margin: 0;
-        padding-bottom: 1rem;
+        padding: 3rem 3rem 2rem;
         button {
             margin: 1.8rem auto 2rem;
             width: 172px;
             height: 53px;
+            margin-left: 25%;
         }
     }
     .privacy_img {

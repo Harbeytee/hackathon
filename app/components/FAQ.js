@@ -6,7 +6,10 @@ export default function FAQ() {
   return (
     <div id='faq' className={styles.faq}>
           {/* <div className={styles.faq_img} src='../landingPage/faq.svg' width={500} height={300}  /> */}
-          <div className={styles.faq_img}></div>
+          <div className={styles.faq_img}>
+            <Image src='../landingPage/faq2.svg' width={347} height={327}  />
+          </div>
+          
           <div style={{maxWidth: '457px'}}>
             <h2>Frequently Ask </h2>
             <h2 className="purple">Question</h2>

@@ -11,7 +11,10 @@ export default function page1() {
     
     <div className={styles.page1}>
         
-        <Image className={styles.purpleGradient} src='../landingpage/purpleGradient.svg' width={100} height={100}/>
+        <div className={styles.purpleGradient}>
+          <div className="lens_center"></div>
+        </div>
+        {/* <Image className={styles.purpleGradient} src='../landingpage/purpleGradient.svg' width={100} height={100}/> */}
 
 
         <div className={styles.centerize}>

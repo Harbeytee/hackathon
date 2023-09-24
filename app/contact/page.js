@@ -3,12 +3,26 @@ import Header from "../components/Header"
 import './contact.scss'
 import '../globals.scss'
 import Image from "next/image"
+import Link from "next/link"
+
 
 export default function page() {
   return (
     <div id="contact">
+        <div className='purple_lens1'>
+                <div className="lens_center"></div>
+
+            </div>
+
+        <div className='purple_lens2 desktop-view'>
+            <div className="lens_center"></div>
+
+        </div>
         <Header className='header desktop' button='btn'/>
-        <Image src='../contact/arrow.svg' alt='x' className="arrow mobile-view" width={33} height={33}/>
+
+        <Link href='/' style={{marginRight: 'auto'}}>
+            <Image src='../contact/arrow.svg' alt='x' className="arrow mobile-view" width={33} height={33}/>
+        </Link>
         <div className="contact-flex">
 
             <div className="first-half desktop-view">

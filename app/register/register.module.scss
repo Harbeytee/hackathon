@@ -12,14 +12,20 @@
 .purple_lens2 {
     position: absolute;
     z-index: -1;
+    opacity: 0.65;
 }
 .purple_lens1 {
-    top: 0;
-    left: 0;
+   
+    top: 135px;
+    left: -160px;
+    
+   
 }
 #register {
+   
     
     position: relative;
+    
     .pink {
         font-size: 10px;
         margin-bottom: 0;
@@ -181,11 +187,32 @@
 }
 
 @media only screen and (min-width: 900px) {
+    .purple_lens1 {
+       
+        top: 40px;
+        left: -250px;
+        
+    }
+    .purple_lens2 {
+        
+        bottom: -60px;
+        right: -100px;
+       > div {
+            width: 600px;
+            height: 500px;
+        }
+        
+       
+       // background-color: red;
+    }
+
+   
     #register {
+       // width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1.3rem 7%;
+        padding: 1.3rem 7% 0;
         
         
         
@@ -239,6 +266,8 @@
             margin-top: 0rem;
         }
     }
+//   
+       
    
     
 

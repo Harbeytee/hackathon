@@ -17,7 +17,7 @@ export default function page() {
 
             </div>
 
-            <div className={styles.purple_lens2}>
+            <div className={`${styles.purple_lens2} desktop-view`}>
                 <div className="lens_center"></div>
 
             </div>

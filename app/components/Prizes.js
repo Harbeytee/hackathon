@@ -5,6 +5,15 @@ import Image from "next/image"
 export default function Prizes() {
   return (
     <div className={styles.prizes}>
+
+        <div className={styles.prize_gradient1}>
+          <div className="lens_center"></div>
+        </div>
+
+        <div className={styles.prize_gradient2}>
+          <div className="lens_center"></div>
+        </div>
+
         <Image src='../landingPage/trophy.svg' className={`${styles.trophy} desktop-view`} width={321} height={282}/>
         <div>
             <h2>Prizes and</h2>

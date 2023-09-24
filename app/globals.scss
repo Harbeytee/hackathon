@@ -9,7 +9,7 @@ $gray: rgba(255, 255, 255, 0.18);
   box-sizing: border-box;
   color: #FFFFFF;
   scroll-behavior: smooth;
- //border: 1px solid;
+  //border: 1px solid;
  
   
   
@@ -17,7 +17,12 @@ $gray: rgba(255, 255, 255, 0.18);
 }
 body {
   background-color: #150E28;
+  overflow-x: hidden;
+  //border-right: 1px solid;
   
+}
+main {
+  overflow-x: hidden;
 }
 
 
@@ -29,10 +34,17 @@ body {
 }
 
 // Start Header
-header, header *  {
+header, ul  {
   display: flex;
-  align-items: center;
-  text-decoration: none;
+    align-items: center;
+    li {
+      list-style-type: none;
+    }
+  //  > * {
+  //   display: flex;
+  //   align-items: center;
+  // }
+  
 }
 header {
   height: 80px;
@@ -40,7 +52,62 @@ header {
   border-bottom: 2px solid $gray;
   width: 100%;
   justify-content: space-between;
+  nav {
+    
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem 3rem;
+    width: 100%;
+    height: 100vh;
+    background: #150E28;
+    z-index: 1000;
+    > * {
+      font-size: 18px;
+      margin-top: 1.7rem;
+      font-weight: 500;
+      
+    }
+    .btn {
+      width: 172px;
+      height: 53px;
+      margin-top: 2rem;
+    }
+   
+    
+  }
 
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  
+  > * {
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      &:nth-of-type(1) {
+        transform: translateY(1.2px) rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        transform: translateY(-1.2px) rotate(-45deg);
+      }
+  }
 }
 .purple {
    color: $lilac
@@ -72,7 +139,7 @@ header {
  }
 //font-family: 'Montserrat', sans-serif;
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 960px) {
 
   .desktop-view {
     display: block;
@@ -95,10 +162,13 @@ header {
     align-items: center;
     //justify-content: space-around;
     li {
-      margin: 0 2rem;
+      margin: 0 1.7rem;
       font-weight: 400;
       font-size: 15px;
       font-family: 'Montserrat', sans-serif;
+      &:hover {
+        color: #D434FE;
+      }
       
     }
     .btn {
@@ -122,6 +192,7 @@ header {
 //Start Footer
 
 footer {
+  z-index: 1;
   background-color: #100B20;
   padding: 2.7rem;
   p {
