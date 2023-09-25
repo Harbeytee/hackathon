@@ -7,7 +7,7 @@ export default function Timeline() {
         <h2>Timeline</h2>
         <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
 
-        <div className={`${styles.desktop} desktop-view`}>
+        <div className={`${styles.desktop} `}>
             <div>
                 
                 <h4 className="purple">Hackathon Announcement</h4>
@@ -84,7 +84,7 @@ export default function Timeline() {
             </div>
         </div>
 
-        <div className={`${styles.mobile} mobile-view`}>
+        <div className={`${styles.mobile}`}>
             <div className={styles.timeline_info}>
                 <div>
                     <span className={styles.vertical_line}></span>
