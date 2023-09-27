@@ -7,7 +7,7 @@ import '../globals.scss'
 export default function page() {
   return (
     <>
-        <Header className={`header ${styles.desktop}`} button='btn'/>
+        <Header className={`header ${styles.desktop}`} button='btn' contact='contact-gradient'/>
 
        
 

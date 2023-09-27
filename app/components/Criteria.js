@@ -5,6 +5,11 @@ import Image from "next/image"
 export default function Criteria() {
   return (
     <div className={styles.criteria}>
+
+      <Image className={`${styles.purple} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+      <Image className={`${styles.white} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+      <Image className={`${styles.gray} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <div className={styles.criteria_lens1}>
           <div className='lens_center'>
           
@@ -24,8 +29,12 @@ export default function Criteria() {
 
         </div> */}
         
-        <div>
-        <Image src='../landingPage/criteria.svg' width={332} height={275} className={styles.criteria_img} />
+        <div className={styles.criteria_img}>
+
+          <div className={styles.img}></div>
+
+          {/* <Image src='../landingPage/criteria.svg' width={332} height={275} className={styles.criteria_img} /> */}
+          <div className={`${styles.ellipse} desktop-view`}></div>
         </div>
         <div>
           <h2>Judging Criteria</h2> 

@@ -4,11 +4,12 @@ import './contact.scss'
 import '../globals.scss'
 import Image from "next/image"
 import Link from "next/link"
-
+import Modal from '../components/Modal/Modal'
 
 export default function page() {
   return (
     <div id="contact">
+        <Modal />
         <div className='purple_lens1'>
                 <div className="lens_center"></div>
 
@@ -18,7 +19,7 @@ export default function page() {
             <div className="lens_center"></div>
 
         </div>
-        <Header className='header desktop' button='btn'/>
+        <Header className='header desktop' button='btn' contact='contact-gradient'/>
 
         <Link href='/' style={{marginRight: 'auto'}}>
             <Image src='../contact/arrow.svg' alt='x' className="arrow mobile-view" width={33} height={33}/>

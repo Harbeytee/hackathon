@@ -5,17 +5,22 @@ import Image from "next/image"
 export default function Rules() {
   return (
     <div className={styles.rules}>
-        {/* <Image className={styles.rules_gradient1} src='../landingpage/purpleGradient.svg' width={100} height={100}/>
-        <Image className={styles.rules_gradient2} src='../landingpage/purpleGradient.svg' width={100} height={100}/> */}
+
+      <Image className={`${styles.white1} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+      <Image className={`${styles.white2} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+      <Image className={`${styles.gray} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <div className={styles.rules_gradient}>
           <div className='lens_center'></div>
         </div>
+
         <div className={styles.rules_gradient2}>
           <div className='lens_center'></div>
         </div>
+
         <div className={styles.rules_img}>
-          <Image src='../landingPage/rules.svg' width={500} height={300}  />
-          {/* <div className={styles.img}></div> */}
+          {/* <Image src='../landingPage/rules.svg' width={500} height={300}  /> */}
+          <div className={styles.img}></div>
           <div className={`${styles.ellipse} desktop-view`}></div>
           
 

@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from '../page.module.scss'
+import Image from "next/image"
 
 export default function Timeline() {
   return (
     <div className={styles.timeline}>
+        <Image className={`${styles.purple} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className={`${styles.white} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+        <Image className={`${styles.gray} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <h2>Timeline</h2>
         <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
 

@@ -15,15 +15,32 @@ $gray: rgba(255, 255, 255, 0.18);
 //Start first page
 .page1 {
     width: 100%;
-    //overflow-x: hidden;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+   
     .btn {
         width: 152px;
         height: 46.837px;
         font-size: 14px;
+    }
+    .white {
+        left: 31.6%;
+        top: 11%;
+        width: 12px;
+        height: 14px;
+    }
+    .gray1, .gray2 {
+        width: 8px;
+        height: 10px;
+    }
+    .gray1 {
+        right: 16%;
+        top: 10.7%;
+    }
+    .gray2 {
+        right: 22%;
+        top: 39%;
     }
     
     
@@ -98,11 +115,11 @@ $gray: rgba(255, 255, 255, 0.18);
     align-items: center;
     flex-direction: column;
     position: relative;
-    margin-top: 1.8rem;
+    margin-top: 1.2rem;
     text-align: center;
     h2 {
         font-family: Clash Display;
-        font-size: 36px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
         
@@ -113,7 +130,7 @@ $gray: rgba(255, 255, 255, 0.18);
         font-size: 14px;
         width: 300px;
         line-height: 166%;
-        margin: 1rem 0rem 1.4rem;
+        margin: 0.6rem 0rem 1.4rem;
     }
 }
 .smallIcons {
@@ -129,7 +146,7 @@ $gray: rgba(255, 255, 255, 0.18);
     font-weight: 400;
     margin: 1.5rem 0 ;
     .time {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 .firstpageImg1, .firstpageImg2, .guy {
@@ -159,13 +176,14 @@ $gray: rgba(255, 255, 255, 0.18);
         display: none;
     }
 }
-@media only screen and (min-width:760px) {
+@media only screen and (min-width:860px) {
     .page1 {
         justify-content: center;
         align-items: center;
         flex-direction: row;
         margin-top: 2rem;
-        padding: 0 2rem
+        padding: 0 2rem;
+        @include border;
     }
     .firstpageImg1 {
         display: none;
@@ -185,8 +203,10 @@ $gray: rgba(255, 255, 255, 0.18);
         }
     }
     .centerize {
+        margin-top: 0;
         display: block;
         text-align: left;
+        margin-bottom: -2rem;
        
         h2 {
             font-size: 55px;
@@ -205,11 +225,13 @@ $gray: rgba(255, 255, 255, 0.18);
         justify-content: flex-start;
     }
     .heading {
+       
         font-size: 19px;
-        margin: 1.5rem 0 2rem;
+        margin: 0 0 -1.5rem;
         display: flex;
         flex-direction: column;
        align-items: flex-end;
+       
         h2 {
         margin-right: 5rem;
         margin-bottom: 2rem;
@@ -252,6 +274,7 @@ $gray: rgba(255, 255, 255, 0.18);
 
 // Start introduction
 .introduction {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,16 +292,34 @@ $gray: rgba(255, 255, 255, 0.18);
         font-weight: 400;
         line-height: 27.5px;
         width: 80%;
-        margin: 1rem auto;
+        margin: 0.4rem auto 1rem;
         
+    }
+    .purple1 {
+        width: 12px;
+        height: 14px;
+        top: 13%;
+        left: 13%;
+    }
+    .purple2 {
+        width: 9px;
+        height: 11px;
+        top: 50%;
+        right: 8%;
+    }
+    .arrow {
+        width: 25.456px;
+        height: 28.818px;
+        top: 40%;
+        position: absolute;
     }
 }
 .introText {
-   
+    margin-top: 2rem;
     h2 {
        
         font-weight: 700;
-        font-size: 25px;
+        font-size: 22px;
         line-height: 133%;
         font-family: 'Clash Display', sans-serif;
        
@@ -338,9 +379,29 @@ $gray: rgba(255, 255, 255, 0.18);
         @include montserrat;
         font-weight: 400;
         line-height: 27.5px;
-        margin: 0.8rem auto 2.5rem;
-        font-size: 14px;
+        margin: 0.8rem auto 3rem;
+        font-size: 13px;
         width: 80%;
+    }
+    .white1, .white2 {
+        width: 10px;
+        height: 12px;
+    }
+    .white1 {
+        top: 24%;
+        left: 10%;
+
+    }
+    .white2 {
+        bottom: 2.5%;
+        left: 28%;
+
+    }
+    .gray {
+        width: 12px;
+        height: 14px;
+        right: 11%;
+       bottom: 39%;
     }
 }
 
@@ -349,11 +410,16 @@ $gray: rgba(255, 255, 255, 0.18);
     margin-top: 1rem;
     height: 100%;
     
-    img {
+    .img {
         
-        width: 100%;
+        
+        //display: block;
+        width: 100vw;
         height: 364px;
-        
+        background-image: url("/landingPage/rules.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
 
     }
     
@@ -389,17 +455,19 @@ $gray: rgba(255, 255, 255, 0.18);
 
 
 @media only screen and (min-width: 760px) {
-    .ellipse {
-        width: 134px;
-        height: 134px;
-        border-radius: 50%;
-        background: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%); 
-        display: block;
-        position: absolute;
-        top: 110px;
-        right: 140px;
-        z-index: -1;
-    }
+    // .ellipse {
+    //     width: 134px;
+    //     height: 134px;
+    //     width: 20%;
+    //     height: 20%;
+    //     border-radius: 50%;
+    //     background: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%); 
+    //     display: block;
+    //     position: absolute;
+    //     top: 110px;
+    //     right: 140px;
+    //     z-index: -1;
+    // }
     .rules {
         flex-direction: row-reverse;
         text-align: left;
@@ -443,34 +511,37 @@ $gray: rgba(255, 255, 255, 0.18);
             
         // }
         
-        img {
-            // display: block;
+        .img {
            
-            // background-image: url("/landingPage/rules.svg");
-            // background-size: contain;
-            // background-position: center;
-            // background-repeat: no-repeat;
+            margin-left: 1.5rem;
+            
              width: 60vw;
              height: 60vh;
             max-width: 50vw;
             min-height: 50vw;
+            
             // max-width: 664px;
             // max-height: 664px;
             position: relative;
+            
             &::before {
                 content: '';
-                width: 134px;
-                height: 134px;
+               // z-index: 100;
+                width: 20%;
+                height: 20%;
                 border-radius: 50%;
                 background-size: cover;
                 background-image: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%); 
                 background-color: #FF2674;
-                display: inline-block;
+                //display: block;
                 position: absolute;
-                top: 120px;
-                right: 160px;
-               
-                z-index: -1;
+                // top: 120px;
+                // right: 160px;
+                top:15%;
+                // right: 140px;
+                right: 21%;
+                 z-index: -1;
+                
     
                 
             }
@@ -496,9 +567,9 @@ $gray: rgba(255, 255, 255, 0.18);
     
    
     .btn {
-        margin: 2rem auto 3rem;
-        width: 96.35px;
-        height: 31.346px;
+        margin: 1.5rem auto 3rem;
+        width: 101.35px;
+        height: 36.346px;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -523,17 +594,49 @@ $gray: rgba(255, 255, 255, 0.18);
         margin: 1.5rem auto 0;
         @include montserrat;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 173.5%;
-        width: 80%;
+        width: 90%;
+    }
+    .purple, .white, .gray {
+        position: absolute;
+    }
+    .purple {
+        width: 13px;
+        height: 17px;
+        top: 1%;
+        left: 45%;
+    }
+    .white {
+        width: 10px;
+        height: 12px;
+        bottom: 5.5%;
+        right: 12%;
+    }
+    .gray {
+        width: 12px;
+        height: 14px;
+        left: 55%;
+        top: 16%;
+
     }
     
 }
 .criteria_img {
-   
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 1rem;
+    margin-top: 1.6rem;
+    .img {
+        
+        width: 100%;
+        //max-width: 600px;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 275px;
+        background-image: url("/landingPage/criteria.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
    // width: 400px;
     
 }
@@ -557,6 +660,7 @@ $gray: rgba(255, 255, 255, 0.18);
 .criteria_lens2 {
     bottom: 70px;
    right: -75px;
+   height: 300px;
     @include lens;
     
     
@@ -585,8 +689,53 @@ $gray: rgba(255, 255, 255, 0.18);
         }
     }
     .criteria_img {
-        width: 65vw;
-        height: 65vh;
+        width: 45vw;
+        height: 587px;
+        margin-right: 1rem;
+        .img {
+           // border: 1px solid;
+            width: 45vw;
+            height: 587px;
+
+        //     width: 60vw;
+        //     height: 60vh;
+        //    max-width: 50vw;
+        //    min-height: 50vw;
+            position: relative;
+            &::before {
+                content: '';
+               // z-index: 100;
+                width: 18vmin;
+                height: 18vmin;
+                // width: 156px;
+                // height: 156px;
+                border-radius: 50%;
+                background-size: cover;
+                background-image: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%); 
+                background-color: #FF2674;
+                //display: block;
+                position: absolute;
+                
+                //left: 160px;
+                top:2.5%;
+                
+                left: 13.3%;
+                 z-index: -1;
+                
+    
+                
+            }
+            
+        }
+        
+        // .img {
+        //     width: 65vw;
+        //     height: 65vh;
+        //     width: 100%;
+        //     height: 587px;
+        //     max-width: 700px;
+        //  }
+       
     //    max-width: 42vw;
     //    //min-height: 42vw;
     // width: 550px;
@@ -604,6 +753,7 @@ $gray: rgba(255, 255, 255, 0.18);
 //Start FAQ
 
 .faq {
+    position: relative;
     padding-top: 4rem;
     display: flex;
     flex-direction: column-reverse;
@@ -614,14 +764,14 @@ $gray: rgba(255, 255, 255, 0.18);
     @include border; 
     h2 {
         text-align: center;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 133%;
         @include clash_display;
         + p {
             font-size: 14px;
             margin: 0.85rem auto;
             text-align: center;
-            width: 80%;
+            width: 88%;
             
         }
     }
@@ -636,6 +786,13 @@ $gray: rgba(255, 255, 255, 0.18);
             font-size: 14px;
             width: 80%;
         }
+    }
+    .purple {
+        width: 18px;
+        height: 22px;
+        position: absolute;
+        top: 4.5%;
+        left: 12%;
     }
    
 }
@@ -662,11 +819,12 @@ $gray: rgba(255, 255, 255, 0.18);
     // justify-content: flex-start;
     // align-items: flex-start;
     position: relative;
+    margin-bottom: 2.5rem;
     img {
         width: 100%;
-        height: 100%;
+        height: 104.5%;
         position: absolute;
-        bottom: 12px;
+        bottom: 10px;
         left: -15px;
     }
    
@@ -700,6 +858,7 @@ $gray: rgba(255, 255, 255, 0.18);
         width: 60vw;
         max-width: 541px;
         height: 541px;
+        margin-bottom: 0;
         img {
             height: 589px;
         }
@@ -719,8 +878,7 @@ $gray: rgba(255, 255, 255, 0.18);
 
 //Start Timeline
 .timeline {
-    //@include border;
-    
+    position: relative;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -763,6 +921,25 @@ $gray: rgba(255, 255, 255, 0.18);
         height: 100%;
         background: #D434FE;
         display: inline-block;
+    }
+    .purple, .white, .gray {
+        position: absolute;
+        width: 10px;
+        height: 12px;
+    }
+    .purple {
+        width: 14px;
+        height: 16px;
+        top: 14%;
+        left: 17%;
+    }
+    .gray {
+        left: 5%;
+        bottom: 3.5%;
+    }
+    .white {
+        top: 51.5%;
+        right: 25%;
     }
 }
 .timeline_info {
@@ -822,7 +999,8 @@ $gray: rgba(255, 255, 255, 0.18);
             div:nth-of-type(2) {
                 display: flex;
                 flex-direction: column;
-                margin: 0 2.5rem;
+                margin-left:2.5rem;
+                margin-right: 2.5rem;
                 align-items: center;
             }
             h4 {

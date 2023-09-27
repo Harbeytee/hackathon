@@ -5,6 +5,9 @@ import Image from "next/image"
 export default function FAQ() {
   return (
     <div id='faq' className={styles.faq}>
+
+          <Image className={`${styles.purple} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/>
+
           {/* <div className={styles.faq_img} src='../landingPage/faq.svg' width={500} height={300}  /> */}
           <div className={styles.faq_img}>
             <Image src='../landingPage/faq2.svg' width={347} height={327}  />

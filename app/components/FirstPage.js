@@ -10,6 +10,10 @@ export default function page1() {
   return (
     
     <div className={styles.page1}>
+
+      <Image className={`${styles.white} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+      <Image className={`${styles.gray1} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+      <Image className={`${styles.gray2} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
         
         <div className={styles.purpleGradient}>
           <div className="lens_center"></div>

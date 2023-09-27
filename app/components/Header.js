@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'], weight: '400'})
 
-export default function Header({className, button}) {
+export default function Header({className, button, contact=''}) {
   return (
     <>
     {/* {/* <Head> */}
@@ -32,7 +32,7 @@ export default function Header({className, button}) {
                 <li><Link href='/'>Timeline</Link></li>
                 <li><a href='/#intro'>Overview</a></li>
                 <li><a href='/#faq'>FAQs</a></li>
-                <li><Link href='/contact'>Contact</Link></li>
+                <li><Link className={contact} href='/contact'>Contact</Link></li>
 
             </ul>
             <Link href='/register' className={button}>Register</Link>

@@ -4,9 +4,15 @@ import styles from '../page.module.scss'
 export default function Introduction() {
   return (
     <div id="intro" className={styles.introduction}>
+
+        <Image className={`${styles.purple1} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/>
+        <Image className={`${styles.purple2} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/>
+        <Image className={styles.arrow} src='../landingpage/arrow.svg' width={100} height={100}/>
+
         <div>
             <Image src='../landingPage/bigIdea.svg' className={styles.big_idea} width={264.004} height={257}/>
         </div>
+
         <div className={styles.introText}>
           <h2>Introduction to getlinked</h2>
           <h2 className="purple">tech Hackathon 1.0</h2>
