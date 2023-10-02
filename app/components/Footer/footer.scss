@@ -1,0 +1,156 @@
+//Start Footer
+
+footer {
+    z-index: 2;
+    background-color: #100B20;
+    padding: 3.5rem;
+    position: relative;
+  
+    .purple_star, .white1, .white2, .gray {
+      position: absolute;
+    }
+    .purple_star, .white1 {
+      width: 8px;
+      height: 9px;
+    }
+    .white2 {
+        left: 7%;
+        top: 18%;
+        width: 10px;
+        height: 11px;
+
+    }
+    .purple_star {
+        bottom: 13%;
+        left: 35%;
+    }
+    .white1 {
+        bottom: 25%;
+        right: 22%;
+        
+    }
+    .gray {
+        width: 15px;
+        height: 18px;
+        top: 48%;
+        left: 50%;
+
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 172.4%;
+    }
+    h4 {
+      font-size: 20px;
+      margin-bottom: 1rem;
+      + p {
+        margin-bottom: 2rem;
+      }
+    }
+    h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+       ~ p {
+        margin-bottom: 0.6rem;
+       }
+    }
+  }
+  .t_p {
+    margin-bottom: 1.7rem;
+    span {
+      margin: 0 0.65rem;
+      font-weight: 700;
+    }
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    > * {
+      margin-right: 0.5rem;
+    }
+    p {
+      margin-right: 1rem;
+    }
+  }
+  .contact {
+    display: flex;
+    margin-bottom: 1rem;
+  
+    &:nth-of-type(2) {
+      margin-bottom: 3rem;
+    }
+    img {
+      margin-right: 1rem;
+    }
+  }
+  
+  .last-text {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  @media only screen and (min-width: 760px) {
+    .footer-flex {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+    footer {
+      padding: 4rem;
+      p {
+        font-size: 14px;
+      }
+      h4 {
+       
+        font-size: 30px;
+        
+        + p {
+          width: 442px;
+        }
+      }
+      h5 {
+        margin-bottom: 1.2rem;
+        font-size: 16px;
+        ~ p {
+          margin-bottom: 1rem;
+        }
+      }
+      .purple_star, .white1, .white2, .gray {
+        width: 15px;
+        height: 18px;
+      }
+      
+      .white2 {
+          left: 5%;
+          top: 25%;
+          
+  
+      }
+      .purple_star {
+          bottom: 25%;
+          left: 50%;
+      }
+      .white1 {
+          bottom: 40%;
+          right: 8%;
+          
+      }
+      .gray {
+          
+          top: 17%;
+          left: 72%;
+      }
+    }
+    .t_p {
+      margin-top: 3rem;
+    }
+  }
+  //End Footer
+  
+  
+  

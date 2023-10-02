@@ -5,9 +5,14 @@ import Image from "next/image"
 export default function Privacy() {
   return (
     <div className={styles.privacy}>
+        <Image className={`${styles.purple1} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className={`${styles.purple2} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className={`${styles.gray} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <div className={styles.privacy_gradient}>
           <div className="lens_center"></div>
         </div>
+
         <div>
             <h2>Privacy Policy and</h2>
             <h2 className="purple">Terms</h2>

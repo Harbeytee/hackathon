@@ -5,7 +5,9 @@ import Image from "next/image"
 export default function Partners() {
   return (
     <div className={styles.partners}>
-      
+
+        
+
         <div className={styles.partners_gradient1}>
           <div className="lens_center"></div>
         </div>
@@ -21,6 +23,10 @@ export default function Partners() {
         </p>
 
         <div className={styles.sponsors}>
+          <Image className={`${styles.purple1} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+          <Image className={`${styles.purple2} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+          <Image className={`${styles.white} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+
           <Image className={styles.top_sponsor} src="../landingPage/partners/libertyA.svg" width={80} height={80}/>
 
           <div style={{alignSelf: 'flex-end'}} className={styles.straight_line}></div>

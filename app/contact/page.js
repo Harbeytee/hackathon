@@ -9,11 +9,17 @@ import Modal from '../components/Modal/Modal'
 export default function page() {
   return (
     <div id="contact">
-        <Modal />
+        {/* <Modal /> */}
+
+        <Image className='purple1 star' src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className='purple2 star' src='../landingpage/stars/purple.svg' width={100} height={100}/>
+        <Image className='white star' src='../landingpage/stars/white.svg' width={100} height={100}/> 
+        <Image className='gray star' src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <div className='purple_lens1'>
                 <div className="lens_center"></div>
 
-            </div>
+        </div>
 
         <div className='purple_lens2 desktop-view'>
             <div className="lens_center"></div>

@@ -10,7 +10,7 @@ import Prizes from "./components/Prizes"
 import Partners from "./components/Partners"
 import Privacy from "./components/Privacy"
 import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer"
 
 export default function Home() {
   return (

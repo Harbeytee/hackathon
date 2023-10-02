@@ -6,6 +6,12 @@ export default function Prizes() {
   return (
     <div className={styles.prizes}>
 
+        <Image className={`${styles.purple1} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className={`${styles.purple2} star`} src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+        <Image className={`${styles.white1} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+        <Image className={`${styles.white2} star`} src='../landingpage/stars/white.svg' width={100} height={100}/> 
+        <Image className={`${styles.gray} star`} src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
         <div className={styles.prize_gradient1}>
           <div className="lens_center"></div>
         </div>

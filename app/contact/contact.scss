@@ -26,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     @include montserrat;
     .desktop {
         display: none;
@@ -39,8 +40,8 @@
    
     
     form {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 2.5rem;  //
+        margin-right: 2.5rem; //
         button {
             margin: 0.3rem auto 2.7rem;
             width: 172px;
@@ -79,6 +80,36 @@
         margin: 0 auto;
     }
 
+    .star {
+        position: absolute;
+    }
+    .purple2, .white {
+        width: 12px;
+        height: 14px;
+    }
+    .purple1 {
+        width: 11px;
+        height: 13px;
+        top: 7%;
+
+    }
+    .purple2 {
+        bottom: 16.8%;
+        left: 8.5%;
+    }
+    .gray {
+        width: 16px;
+        height: 20px;
+        right: 15%;
+        top: 17.5%;
+        
+    }
+    .white {
+        right: 6%;
+        bottom: 25.5%;
+        
+    }
+
     
 }
 
@@ -90,8 +121,8 @@
 
 .contact-form {
     p {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 2.5rem; //
+        margin-right: 2.5rem; //
         margin-bottom: 1.6rem;
        
     }
@@ -100,7 +131,7 @@
          
          @include clash_display;
          font-weight: 600;
-         margin: 2rem 2rem 1.6rem 2rem;
+         margin: 2rem 2.5rem 1.6rem 2.5rem;//
          line-height: 28px;
          //text-align: center;
          //width: 195px;
@@ -158,6 +189,35 @@
        }
         p {
             text-align: left;
+        }
+
+        .gray, .white {
+            width: 26px;
+            height: 32px;
+        }
+        .purple1 {
+            width: 30px;
+            height: 36px;
+            top: 76%;
+            left: 39.5%;
+    
+        }
+        .purple2 {
+            width: 21px;
+            height: 25px;
+            bottom: 73%;
+            left: 15.5%;
+        }
+        .gray {
+            
+            right: 16%;
+            top: 17.5%;
+            
+        }
+        .white {
+            right: 6%;
+            bottom: 0%;
+            
         }
     }
     .contact-flex {

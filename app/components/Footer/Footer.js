@@ -1,8 +1,15 @@
 import React from 'react'
 import Image from "next/image"
+import styles from './footer.scss'
+
 export default function Footer() {
   return (
     <footer>
+          <Image className='purple_star star' src='../landingpage/stars/purple.svg' width={100} height={100}/> 
+          <Image className='white1 star' src='../landingpage/stars/white.svg' width={100} height={100}/>
+          <Image className='white2 star' src='../landingpage/stars/white.svg' width={100} height={100}/> 
+          <Image className='gray star' src='../landingpage/stars/gray.svg' width={100} height={100}/> 
+
           <div className="footer-flex">
 
             <div>
